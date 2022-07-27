@@ -1,0 +1,109 @@
+.portfolio_navbar-links_title {
+    margin-right: 2rem;
+}
+
+.portfolio_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+    /* background: #ac6262; */
+    /* position: sticky;
+    top: 0; */
+}
+
+.portfolio_navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.portfolio_navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio_navbar-links_container p,
+.portfolio_navbar-sign p,
+.portfolio_navbar-menu_container p,
+.portfolio_navbar-links_title p {
+    /* color: #ac6262; */
+    color: #C0C0C0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin: 0 1rem;
+    font-weight: lighter;
+    letter-spacing: 0.08rem;
+}
+
+.portfolio_navbar-links_title p {
+    color: #ac6262;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.portfolio_navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.portfolio_navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background-color: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*big screens */
+@media screen and (max-width: 1050px) {
+    .portfolio_navbar-menu {
+        display: flex;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .portfolio_navbar-links_container {
+        display: none;
+    }
+
+    .portfolio_navbar {
+        padding: 2rem 4rem;
+    }
+
+    .portfolio_navbar-menu {
+        display: flex;
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .portfolio_navbar {
+        padding: 2rem;
+    }
+
+    .portfolio_navbar-menu_container {
+        top: 20px;
+    }
+
+    .portfolio_navbar-menu {
+        display: flex;
+        visibility: visible;
+    }
+}

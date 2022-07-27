@@ -1,0 +1,40 @@
+.portfolio_about {
+    display: flex;
+}
+
+.portfolio_about-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.portfolio_about-content-section {
+    font-family: var(--font-family);
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+/* .row_container {
+    flex-direction: row;
+} */
+
+.portfolio_about-content-section h2 {
+    color: var(--color-text);
+    letter-spacing: 0.08rem;
+    font-size: 25px;
+    list-style: 40px;
+    margin-bottom: 1.8rem;
+}
+
+.portfolio_about-content-section .about_text {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 0.03rem;
+    line-height: 1.5rem;
+}
+
+.about_time-span {
+    color: grey;
+    font-size: 15px;
+}

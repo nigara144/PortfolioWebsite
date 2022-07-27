@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    /* background: var(--color-bg); */
+    background: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+    color: unset;
+    text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.gradient_bg {
+    /* ff 3.6+ */
+    background: -moz-linear-gradient(143deg, rgba(226, 222, 221, 1) 100%, rgba(205, 179, 205, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-linear-gradient(143deg, rgba(226, 222, 221, 1) 100%, rgba(205, 179, 205, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-linear-gradient(143deg, rgba(226, 222, 221, 1) 100%, rgba(205, 179, 205, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CDB3CD', endColorstr='#E2DEDD', GradientType=1);
+
+    /* ie 10+ */
+    background: -ms-linear-gradient(143deg, rgba(226, 222, 221, 1) 100%, rgba(205, 179, 205, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background: linear-gradient(143deg, rgba(226, 222, 221, 1) 100%, rgba(205, 179, 205, 1) 100%);
 }
 
-.App-link {
-  color: #61dafb;
+.gradient_pumba-bg {
+    /* ff 3.6+ */
+    background: -moz-linear-gradient(143deg, rgba(255, 253, 223, 1) 0%, rgba(245, 235, 255, 1) 50%, rgba(245, 229, 255, 1) 100%, rgba(195, 128, 255, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-linear-gradient(143deg, rgba(255, 253, 223, 1) 0%, rgba(245, 235, 255, 1) 50%, rgba(245, 229, 255, 1) 100%, rgba(195, 128, 255, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-linear-gradient(143deg, rgba(255, 253, 223, 1) 0%, rgba(245, 235, 255, 1) 50%, rgba(245, 229, 255, 1) 100%, rgba(195, 128, 255, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#C380FF', endColorstr='#FFFDDF', GradientType=1);
+
+    /* ie 10+ */
+    background: -ms-linear-gradient(143deg, rgba(255, 253, 223, 1) 0%, rgba(245, 235, 255, 1) 50%, rgba(245, 229, 255, 1) 100%, rgba(195, 128, 255, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background: linear-gradient(143deg, rgba(255, 253, 223, 1) 0%, rgba(245, 235, 255, 1) 50%, rgba(245, 229, 255, 1) 100%, rgba(195, 128, 255, 1) 100%);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gradient_text {
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section_padding {
+    padding: 4rem 6rem;
+}
+
+
+.section_margin {
+    margin: 4rem 6rem;
+}
+
+.scale-up-center {
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.slide-top {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+}
+
+/* For Middle sized devices like Tablets and bigger phones */
+@media screen and (max-width: 700px) {
+    .section_padding {
+        padding: 4rem;
+    }
+
+    .section_margin {
+        margin: 4rem;
+    }
+}
+
+/* For Mobile devices */
+@media screen and (max-width: 550px) {
+    .section_padding {
+        padding: 4rem 2rem;
+    }
+
+    .section_margin {
+        margin: 4rem 2rem;
+    }
 }

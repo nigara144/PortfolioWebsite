@@ -1,0 +1,38 @@
+.contact {
+    display: flex;
+    flex: 1;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 50px;
+}
+
+.contact h2 {
+    font-family: var(--font-family2);
+    font-weight: 400;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 30px;
+    list-style: 40px;
+    letter-spacing: 0.04rem;
+    color: var(--color-text);
+}
+
+.btn-contact {
+    font-family: var(--font-family);
+    font-size: 16px;
+    background: #ffffff;
+    margin-right: 15px;
+}
+
+.contact_icon {
+    position: relative;
+    top: 5px;
+    right: 10px;
+}
+
+.portfolio_contact-info {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,125 @@
+.portfolio_header {
+    display: flex;
+}
+
+.portfolio_header-content {
+    flex: 1;
+    display: flex;
+    /*So they will appear side by side*/
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 5rem;
+    margin-top: -1rem;
+}
+
+.portfolio_header-content h1 {
+    font-family: var(--font-family);
+    font-weight: bolder;
+    font-size: 50px;
+    list-style: 60px;
+    letter-spacing: -0.01rem;
+    color: #473F3F;
+    margin-bottom: 0.9rem;
+}
+
+.portfolio_header-content h2 {
+    font-family: var(--font-family2);
+    font-weight: 400;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 30px;
+    list-style: 40px;
+    letter-spacing: 0.04rem;
+    color: var(--color-text);
+}
+
+.portfolio_header-content p {
+    font-family: var(--font-family);
+    font-display: swap;
+    font-weight: 200;
+    font-size: 16px;
+    list-style: 20px;
+    line-height: 1.5rem;
+    letter-spacing: 0.04rem;
+    color: var(--color-subtext);
+    margin-top: 1.9rem;
+    margin-bottom: 1.9rem;
+}
+
+.portfolio_header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio_header-image img {
+    width: 280px;
+    height: 420px;
+    border-width: 10px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-style: solid;
+    border-color: #d0cac9;
+}
+
+.download_icon {
+    position: relative;
+    top: 4px;
+    left: 2px;
+}
+
+@media screen and (max-width: 1050px) {
+    .portfolio_header {
+        flex-direction: column;
+    }
+
+    .portfolio_header-content {
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .portfolio_header h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .portfolio_header p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .portfolio_header h2 {
+        font-size: 23px;
+        line-height: 40px;
+    }
+
+    .portfolio_header-content {
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .portfolio_header h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .portfolio_header p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .portfolio_header h2 {
+        font-size: 20px;
+        line-height: 38px;
+    }
+
+    .portfolio_header-content {
+        margin: 0 0 3rem;
+    }
+}

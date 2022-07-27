@@ -1,0 +1,56 @@
+/* .portfolio_contact {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 50px;
+}
+
+.portfolio_contact p {
+    font-family: poppins;
+    font-weight: 100;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 0.03rem;
+    margin-bottom: 10px;
+}
+
+.portfolio_contact h2 {
+    font-family: var(--font-family);
+    color: var(--color-text);
+    font-style: bolder;
+    font-size: 25px;
+    letter-spacing: 0.08rem;
+    margin-bottom: 50px;
+}
+
+.portfolio_contact-info {
+    margin-bottom: 50px;
+}
+
+.portfolio_contact-info-span {
+    border-width: 0.01px;
+    border-color: var(--color-text);
+    border-style: solid;
+    font-family: var(--font-family);
+    color: white;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 20px;
+    letter-spacing: 0.03rem;
+}
+
+.contact_icon {
+    position: relative;
+    top: 9px;
+    right: 10px;
+    color: var(--color-text);
+} */
