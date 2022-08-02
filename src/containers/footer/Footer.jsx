@@ -5,7 +5,7 @@ import { GrLinkedinOption } from 'react-icons/gr'
 
 const Footer = () => {
     return (
-        <div className='contact'>
+        <div className='contact' id='footer'>
             <h2>Contact Me</h2>
             <h4>Get In Touch</h4>
             <div className='portfolio_contact-info'>

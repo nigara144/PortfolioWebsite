@@ -12,7 +12,7 @@ const shadowStyles = {
 const Header = () => {
     return (
         <div className='portfolio_header section_padding' id='home'>
-            <div className='portfolio_header-content slide-top'>
+            <div className='portfolio_header-content'>
                 <h1 className='title_text'>Nigar Azadaliyev</h1>
                 <h2 className='subtitle'>Software Engineer</h2>
                 <p>I am very passionate about the frontend world and have a great
@@ -20,7 +20,8 @@ const Header = () => {
                 </p>
                 <a href={Resume} download className='btn'>Download Resume <FiDownload size={20} className='download_icon' /></a>
             </div>
-            <div className='portfolio_header-image slide-top'>
+            {/* <div className='portfolio_header-image slide-top'> - makes the image slide animation*/}
+            <div className='portfolio_header-image '>
                 <img style={shadowStyles} src={profilePic} alt="profile" />
             </div>
         </div>

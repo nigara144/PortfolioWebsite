@@ -3,38 +3,40 @@
 }
 
 .portfolio_about-content {
-    flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.portfolio_about-content>* {
+    flex: 1 1 300px;
 }
 
 .portfolio_about-content-section {
     font-family: var(--font-family);
-    margin-left: 8%;
-    margin-right: 8%;
+    max-width: 350px;
+    padding-bottom: 30px;
 }
 
-/* .row_container {
-    flex-direction: row;
-} */
-
 .portfolio_about-content-section h2 {
-    color: var(--color-text);
-    letter-spacing: 0.08rem;
-    font-size: 25px;
+    font-family: var(--font-family2);
+    font-weight: 400;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 30px;
     list-style: 40px;
-    margin-bottom: 1.8rem;
+    letter-spacing: 0.04rem;
+    color: var(--color-text);
 }
 
 .portfolio_about-content-section .about_text {
-    color: white;
+    color: var(--color-subtext);
     font-size: 16px;
     letter-spacing: 0.03rem;
     line-height: 1.5rem;
+    margin-right: 10%;
 }
 
 .about_time-span {
-    color: grey;
-    font-size: 15px;
+    font-size: 14px;
+    color: var(--color-navbar);
 }

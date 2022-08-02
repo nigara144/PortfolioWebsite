@@ -6,10 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 6rem;
-    /* background: #ac6262; */
-    /* position: sticky;
-    top: 0; */
+    padding: 2rem 5rem;
 }
 
 .portfolio_navbar-links {
@@ -28,12 +25,11 @@
 .portfolio_navbar-sign p,
 .portfolio_navbar-menu_container p,
 .portfolio_navbar-links_title p {
-    /* color: #ac6262; */
-    color: #C0C0C0;
+    color: var(--color-navbar);
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 17px;
-    line-height: 25px;
+    line-height: 42px;
     text-transform: capitalize;
     cursor: pointer;
     margin: 0 1rem;
@@ -48,26 +44,31 @@
 }
 
 .portfolio_navbar-menu {
-    margin-left: 1rem;
     display: none;
-    position: relative;
+    position: absolute;
 }
+
 
 .portfolio_navbar-menu_container {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: start;
+    align-items: center;
     flex-direction: column;
-    text-align: end;
-    background-color: var(--color-footer);
+    text-align: start;
+    background-color: white;
     padding: 2rem;
-    position: absolute;
-    top: 40px;
-    right: 0;
-    margin-top: 1rem;
-    min-width: 210px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding-top: 100px;
+    /* position: absolute; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* border-radius: 5px; */
+    box-shadow: 0px 0px 5px rgba(92, 49, 49, 0.2);
+    height: 100%;
+}
+
+#open_menu_icon {
+    position: sticky;
 }
 
 /*big screens */
@@ -88,22 +89,26 @@
     }
 
     .portfolio_navbar-menu {
-        display: flex;
         visibility: visible;
+    }
+
+    .portfolio_navbar-links_title {
+        visibility: hidden;
     }
 }
 
+/*small screens */
 @media screen and (max-width: 550px) {
     .portfolio_navbar {
         padding: 2rem;
     }
 
-    .portfolio_navbar-menu_container {
+    /* .portfolio_navbar-menu_container {
         top: 20px;
+    } */
+
+    .portfolio_navbar-links_title {
+        visibility: hidden;
     }
 
-    .portfolio_navbar-menu {
-        display: flex;
-        visibility: visible;
-    }
 }
