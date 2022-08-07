@@ -51,7 +51,7 @@
 
 .portfolio_navbar-menu_container {
     display: flex;
-    justify-content: start;
+    /* justify-content: start; */
     align-items: center;
     flex-direction: column;
     text-align: start;

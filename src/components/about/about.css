@@ -40,3 +40,29 @@
     font-size: 14px;
     color: var(--color-navbar);
 }
+
+.circle_progress_bars {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px;
+}
+
+.circle_progress_bars>* {
+    margin: 20px;
+}
+
+.bar {
+    width: 85px;
+}
+
+.lang_text {
+    text-align: center;
+    margin-top: 10px;
+    line-height: 20px;
+    color: var(--color-subtext);
+}
+
+.lang_level {
+    font-size: 14px;
+    color: var(--color-navbar);
+}

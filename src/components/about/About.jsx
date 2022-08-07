@@ -1,8 +1,6 @@
 import React from 'react'
 import './about.css'
 import { CircularProgressBar } from '../exports'
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
 
 const About = () => {
     return (
@@ -36,10 +34,11 @@ const About = () => {
                 </div>
                 <div className='portfolio_about-content-section'>
                     <h2 className='subtitle_skills'>Languages</h2>
-                    {/* <p className='about_text'>English</p>
-                    <p className='about_text'>Hebrew</p>
-                    <p className='about_text'>Russian</p> */}
-                    <CircularProgressBar />
+                    <div className='circle_progress_bars'>
+                        <CircularProgressBar />
+                        <CircularProgressBar />
+                        <CircularProgressBar />
+                    </div>
                 </div>
                 {/* </div> */}
             </div>

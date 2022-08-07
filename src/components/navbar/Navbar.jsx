@@ -2,20 +2,20 @@ import React, { useState } from 'react'
 import { RiCloseLine } from 'react-icons/ri'
 import { IoIosMenu } from 'react-icons/io'
 import './navbar.css'
-import styled, { keyframes } from 'styled-components'
+// import { keyframes } from 'styled-components'
 
-const animation = keyframes`
-    0% {transform: translateY(-100px);}
-    25% {transform: translateY(0);}
-    75% {transform: translateY(0);}
-    100% {transform: translateY(-100px);}
-`
-const JumpText = styled.span`
-    display: inline-block;
-    animation-name: ${animation};
-    animation-duration: 6s;
-    animation-fill-mode: forwards;
-`
+// const animation = keyframes`
+//     0% {transform: translateY(-100px);}
+//     25% {transform: translateY(0);}
+//     75% {transform: translateY(0);}
+//     100% {transform: translateY(-100px);}
+// `
+// const JumpText = styled.span`
+//     display: inline-block;
+//     animation-name: ${animation};
+//     animation-duration: 6s;
+//     animation-fill-mode: forwards;
+// `
 
 const Menu = () => (
     <>
