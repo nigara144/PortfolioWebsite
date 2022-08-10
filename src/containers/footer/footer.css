@@ -20,19 +20,22 @@
     color: var(--color-text);
 }
 
-.btn-contact {
+.contact_btn {
     font-family: var(--font-family);
     font-size: 16px;
-    background: #ffffff;
-    margin-right: 15px;
+    margin-right: 10px;
+    color: var(--color-primary);
 }
 
 .contact_icon {
     position: relative;
     top: 5px;
-    right: 10px;
 }
 
 .portfolio_contact-info {
     margin-bottom: 50px;
 }
+
+/* .a {
+    margin-right: 20px;
+} */

@@ -4,10 +4,10 @@ import profilePic from '../../assets/profilePic.jpeg'
 import Resume from '../../assets/Nigar Azadaliyev - Resume.pdf'
 import { FiDownload } from 'react-icons/fi'
 
-const shadowStyles = {
-    boxShadow: '4px 4px 17px 9px #C7C4C4',
-    margin: '4rem'
-};
+// const shadowStyles = {
+//     boxShadow: '4px 4px 17px 9px #C7C4C4',
+//     margin: '4rem'
+// };
 
 const Header = () => {
     return (
@@ -22,7 +22,8 @@ const Header = () => {
             </div>
             {/* <div className='portfolio_header-image slide-top'> - makes the image slide animation*/}
             <div className='portfolio_header-image '>
-                <img style={shadowStyles} src={profilePic} alt="profile" />
+                {/* <img style={shadowStyles} src={profilePic} alt="profile" /> */}
+                <img src={profilePic} alt="profile" />
             </div>
         </div>
     )

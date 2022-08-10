@@ -100,7 +100,13 @@
 /*small screens */
 @media screen and (max-width: 550px) {
     .portfolio_navbar {
-        padding: 2rem;
+        padding-left: 1rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+
+    .portfolio_navbar-menu {
+        width: 20px;
     }
 
     /* .portfolio_navbar-menu_container {

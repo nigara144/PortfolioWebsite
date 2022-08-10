@@ -1,25 +1,19 @@
-import {
-    CircularProgressbar,
-    buildStyles
-} from "react-circular-progressbar";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import React from 'react'
 import './projects/projects.css'
 import "react-circular-progressbar/dist/styles.css";
 import AnimatedProgressProvider from "./animations/AnimatedProgressProvider";
 import { easeQuadInOut } from "d3-ease";
 
-
-const percentage1 = 95;
-
-const CircularProgressBar = () => {
+const CircularProgressBar = ({ lang, percentage, level }) => {
     return (
         <div className="bar">
             <AnimatedProgressProvider className="bar_animation"
                 valueStart={0}
-                valueEnd={percentage1}
+                valueEnd={percentage}
                 duration={1.4}
                 easingFunction={easeQuadInOut}
-                text={`${percentage1}%`}
+                text={`${percentage}%`}
             >
                 {value => {
                     const roundedValue = Math.round(value);
@@ -38,8 +32,8 @@ const CircularProgressBar = () => {
                     );
                 }}</AnimatedProgressProvider>
             <div className="lang_text">
-                <p className="languages">English</p>
-                <p className="lang_level">Native level</p>
+                <p className="languages">{lang}</p>
+                <p className="lang_level">{level}</p>
             </div>
         </div>
     )
