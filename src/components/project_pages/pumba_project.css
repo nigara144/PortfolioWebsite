@@ -109,7 +109,6 @@
 }
 
 .rectangle1 {
-
     width: 90px;
     height: 90px;
     background: #8F71FE;
@@ -152,4 +151,87 @@
     line-height: 20px;
     letter-spacing: 0.7px;
     color: var(--color-subtext);
+}
+
+@media screen and (max-width: 500px) {
+    .title_container {
+        margin-top: 20px;
+        margin-left: 40px;
+
+    }
+
+    .title_project {
+        font-size: 14px;
+    }
+
+    .pumba_logo img {
+        width: 170px;
+    }
+
+    .pumba_logo p {
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    .brand_name {
+        font-size: 14px;
+        width: 170px;
+    }
+
+    .pumba_screens img {
+        width: 140px;
+        margin-top: 100px;
+    }
+
+    .my_job {
+        padding-top: 100px;
+        padding-left: 40px;
+    }
+
+    .my_job h2 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .my_job p {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .challenge_text {
+        margin-bottom: 10px;
+    }
+
+    .challenge_text h2 {
+        font-size: 22px;
+        /* justify-content: center;
+        align-content: center; */
+        text-align: center;
+        width: 80%;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+    .challenge_text p {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .rectangle1,
+    .rectangle2,
+    .rectangle3,
+    .rectangle4 {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .colors_and_hexas {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .colors_and_hexas p {
+        font-size: 14px;
+    }
 }

@@ -6,10 +6,10 @@ const Layout = () => {
     return (
         <div className='App'>
             {/* <div className='gradient_bg'> */}
-            <div>
-                <Navbar />
-                <Header />
-            </div>
+            {/* <div> */}
+            <Navbar />
+            <Header />
+            {/* </div> */}
             <About />
             <Projects />
             <Footer />

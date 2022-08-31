@@ -66,3 +66,42 @@
     font-size: 14px;
     color: var(--color-navbar);
 }
+
+@media screen and (max-width: 500px) {
+    .portfolio_about-content>* {
+        flex: 1 1 100px;
+    }
+
+    .portfolio_about-content-section {
+        margin-right: 20px;
+    }
+
+    .portfolio_about-content-section h2 {
+        font-size: 22px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+
+    .portfolio_about-content-section .about_text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .about_time-span {
+        font-size: 12px;
+    }
+
+    .bar {
+        width: 70px;
+    }
+
+    .lang_level {
+        font-size: 12px;
+    }
+
+    .lang_text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+}

@@ -22,7 +22,6 @@ const Header = () => {
             </div>
             {/* <div className='portfolio_header-image slide-top'> - makes the image slide animation*/}
             <div className='portfolio_header-image '>
-                {/* <img style={shadowStyles} src={profilePic} alt="profile" /> */}
                 <img src={profilePic} alt="profile" />
             </div>
         </div>

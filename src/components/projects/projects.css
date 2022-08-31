@@ -46,6 +46,42 @@
 
 .project_card p {
     margin-left: 40px;
+    color: var(--color-subtext);
+}
+
+@media screen and (max-width: 500px) {
+    .portfolio_projects {
+        flex-wrap: wrap;
+        margin: -2rem 0rem 0rem -4rem;
+    }
+
+    .portfolio_projects h2 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    #pumba_project {
+        margin-top: 50px;
+    }
+
+    .project_card img {
+        width: 200px;
+        margin-left: 0px;
+    }
+
+    .project_card h3 {
+        font-size: 14px;
+        margin-left: 0px;
+    }
+
+    .project_card p {
+        font-size: 14px;
+        margin-left: 0px;
+    }
+
+    /* .project_card {
+        margin-left: -40px;
+    } */
 }
 
 
