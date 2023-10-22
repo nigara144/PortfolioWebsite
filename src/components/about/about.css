@@ -1,14 +1,46 @@
-.portfolio_about {
+/* .portfolio_about {
     display: flex;
+    flex-direction: row;
+    
+} */
+/* .title {
+    flex-direction: row;
+    display: flex;
+} */
+
+.title h2{
+    color: black;
+    font-family: var(--font-family);
+    margin-bottom: 20px;
+    display: flex;
+    font-weight: 600;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: bold;
+    align-items: center;
+}
+
+.portfolio_header-image img {
+    width: 280px;
+    height: 420px;
+    border-width: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-style: solid;
+    border-color: #ffffff;
 }
 
 .portfolio_about-content {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .portfolio_about-content>* {
-    flex: 1 1 300px;
+    /* flex: 1 1 300px; */
+    flex-direction: row;
 }
 
 .portfolio_about-content-section {

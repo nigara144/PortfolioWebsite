@@ -11,9 +11,16 @@
     padding: 0;
 }
 
+.font-link {
+    font-family: 'Josefin Sans', serif;
+    font-family: 'Cinzel Decorative', cursive;
+  }
+
 :root {
-    --font-family: 'Poppins', sans-serif;
-    --font-family2: 'rokkitt', serif;
+    /* --font-family: 'Poppins', sans-serif; */
+    font-family: 'Josefin Sans', serif;
+    /* font-family: 'Cinzel Decorative', cursive; */
+    /* --font-family2: 'rokkitt', serif; */
 
     --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
     --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
@@ -29,20 +36,21 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     background: #ffffff;
     line-height: 1.7;
 }
 
 h2 {
-    font-family: var(--font-family2);
+    /* font-family: var(--font-family); */
     font-size: 30px;
     letter-spacing: 0.04rem;
     font-style: normal;
+    font-weight: bolder;
 }
 
 h4 {
-    font-family: var(--font-family);
+    /* font-family: var(--font-family); */
     font-size: 16px;
     color: gray;
     letter-spacing: 0.02rem;

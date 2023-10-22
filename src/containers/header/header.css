@@ -1,6 +1,6 @@
 .portfolio_header {
     display: flex;
-    background: #FAF5F1;
+    /* background: #FAF5F1; */
 }
 
 .portfolio_header-content {
@@ -8,14 +8,15 @@
     display: flex;
     /*So they will appear side by side*/
     justify-content: center;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     flex-direction: column;
-    margin-right: 5rem;
-    margin-top: -1rem;
+    align-items: center;
+    /* margin-right: 5rem;
+    margin-top: -1rem; */
 }
 
 .portfolio_header-content h1 {
-    font-family: var(--font-family);
+    font-family: 'Cinzel Decorative', cursive;
     font-weight: bolder;
     font-size: 50px;
     list-style: 60px;
@@ -25,27 +26,13 @@
 }
 
 .portfolio_header-content h2 {
-    font-family: var(--font-family2);
-    font-weight: 400;
-    font-style: normal;
-    font-weight: lighter;
+    font-family: 'Josefin Sans', serif;
+    font-weight: 700;
     font-size: 30px;
-    list-style: 40px;
     letter-spacing: 0.04rem;
     color: var(--color-text);
-}
-
-.portfolio_header-content p {
-    font-family: var(--font-family);
-    font-display: swap;
-    font-weight: 200;
-    font-size: 16px;
-    list-style: 20px;
-    line-height: 1.5rem;
-    letter-spacing: 0.04rem;
-    color: var(--color-subtext);
-    margin-top: 1.9rem;
-    margin-bottom: 1.9rem;
+    margin-top: 1.7rem;
+    text-align: center;
 }
 
 .portfolio_header-image {
@@ -55,7 +42,7 @@
     align-items: center;
 }
 
-.portfolio_header-image img {
+/* .portfolio_header-image img {
     width: 280px;
     height: 420px;
     border-width: 10px;
@@ -64,9 +51,8 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-style: solid;
-    /* border-color: #d0cac9; */
     border-color: #ffffff;
-}
+} */
 
 .download_icon {
     position: relative;
